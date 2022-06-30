@@ -1,0 +1,288 @@
+@import "presets";
+@import "responsive";
+
+$cyan: hsl(180, 66%, 49%);
+$violet: hsl(257, 27%, 26%);
+$red: hsl(0, 87%, 67%);
+$gray: hsl(0, 0%, 75%);
+$grayishViolet: hsl(257, 7%, 63%);
+$veryDarkBlue: hsl(255, 11%, 22%);
+$VeryDarkViolet: hsl(260, 8%, 14%);
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+  .fa-bars{
+      display: none;
+  }
+
+  .nav_left {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      font-size: 1.5rem;
+      color: $veryDarkBlue;
+      margin-left: 35px;
+      &:first-child {
+        margin-left: 0px;
+      }
+    }
+  }
+  .nav_right {
+    width: 20%;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      font-size: 1.5rem;
+      color: $veryDarkBlue;
+      font-weight: bold;
+    }
+
+    .signup {
+      background-color: $cyan;
+      min-width: 100px;
+      text-align: center;
+      height: fit-content;
+      padding: 5px 15px 5px 15px;
+      border-radius: 20px;
+      font-size: 1.5rem;
+      margin-top: -5px;
+      color: white;
+      margin-left: 20px;
+    }
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+  margin-bottom: 4rem;
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 30px 0px 0 60px;
+
+    h1 {
+      font-size: 7rem;
+      line-height: 1.1;
+      color: $VeryDarkViolet;
+      font-weight: bolder;
+    }
+    p {
+      color: $gray;
+      font-size: 2rem;
+      margin-top: 10px;
+    }
+    button {
+      background-color: $cyan;
+      width: fit-content;
+      height: fit-content;
+      padding: 10px 15px 10px 15px;
+      border-radius: 20px;
+      color: white;
+      margin-top: 20px;
+    }
+  }
+
+  .hero-img {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+
+    img {
+      width: 85%;
+    }
+  }
+}
+.shorten {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-image: url("../images/bg-shorten-desktop.svg");
+  background-size: cover;
+  background-color: $violet;
+  margin-bottom: 3rem;
+
+  input {
+    width: 60%;
+    height: 60px;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 1.8rem;
+  }
+  button {
+    width: 20%;
+    height: 60px;
+    margin-left: 15px;
+    background-color: $cyan;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+  }
+}
+.advanced {
+  display: flex;
+  width: 50%;
+  padding: 50px;
+  margin: 0 auto;
+  flex-direction: column;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 5rem;
+
+  h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: $VeryDarkViolet;
+  }
+  p {
+    color: $grayishViolet;
+  }
+}
+.features {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 8rem;
+  position: relative;
+
+  &:before {
+    content: "";
+    width: 80%;
+    top: 50%;
+    left: 10%;
+    height: 8px;
+    background-color: $cyan;
+    position: absolute;
+    z-index: -1;
+  }
+  .card {
+    width: 30%;
+    height: fit-content;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    z-index: 1;
+    background-color: white;
+
+    img {
+      background-color: $violet;
+      padding: 15px;
+      border-radius: 50%;
+      margin-top: -35px;
+      margin-left: 20px;
+    }
+
+    .card-text {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      padding-top: 0px;
+
+      h3 {
+        color: $VeryDarkViolet;
+        margin-bottom: 15px;
+        margin-top: 10px;
+      }
+      p {
+        color: $grayishViolet;
+        line-height: 1.5;
+        font-size: 1.7rem;
+      }
+    }
+
+    &:nth-child(2) {
+      margin-top: 50px;
+    }
+    &:nth-child(3) {
+      margin-top: 100px;
+    }
+  }
+}
+.banner {
+  display: flex;
+  background-color: $violet;
+  flex-direction: column;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/bg-boost-desktop.svg");
+  background-size: cover;
+
+  h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 3.8rem;
+  }
+  button {
+    background-color: $cyan;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
+    color: white;
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+}
+footer {
+  background-color: $veryDarkBlue;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  padding: 40px 0 20px 0;
+
+  .brand {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+  .links {
+    width: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+
+    .column {
+      width: 33%;
+      display: flex;
+      flex-direction: column;
+      color: $gray;
+
+
+      li {
+        font-weight: lighter;
+        margin-top: 20px;
+        &:first-child {
+          font-weight: bold;
+          margin-top: 0px;
+          color: white;
+        }
+      }
+    }
+  }
+  .socials {
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    img {
+      width: 10%;
+      height: 10%;
+    }
+  }
+}
