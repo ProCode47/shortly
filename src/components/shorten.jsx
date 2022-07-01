@@ -58,7 +58,7 @@ export default function Shorten() {
         {shortenedLinks.map((linkObject, index) => (
           <div key={index} className="short-link col-sm">
             <h3 className="col-item"> {linkObject.link}</h3>
-            <span className="col-item">
+            <span className="col-item mt-md">
               <p>{linkObject.shortLink}</p>
               <button onClick={() => copyLink(linkObject.shortLink)}>
                 {" "}
