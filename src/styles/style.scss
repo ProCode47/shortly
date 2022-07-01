@@ -2,6 +2,7 @@
 @import "responsive";
 
 $cyan: hsl(180, 66%, 49%);
+$lightCyan: hsl(180, 47%, 65%);
 $violet: hsl(257, 27%, 26%);
 $red: hsl(0, 87%, 67%);
 $gray: hsl(0, 0%, 75%);
@@ -90,6 +91,7 @@ nav {
       border-radius: 20px;
       color: white;
       margin-top: 20px;
+      font-size: 2rem;
     }
   }
 
@@ -129,6 +131,37 @@ nav {
     font-weight: bold;
     border-radius: 5px;
     color: white;
+    &:active{
+      background-color: $lightCyan;
+    }
+  }
+}
+.shortened-links{
+  display: flex;
+  flex-direction: column;
+  .short-link{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    background-color: #EFF1F7;
+
+
+    span{
+      display: flex;
+      align-items: center;
+      button{
+        padding: 15px;
+        font-size:1.5rem;
+        color: white;
+        width: 100px;
+        border-radius: 5px;
+        background-color: $cyan;
+        margin-left: 30px;
+
+      }
+    }
   }
 }
 .advanced {

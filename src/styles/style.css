@@ -293,6 +293,7 @@ nav .nav_right .signup {
   border-radius: 20px;
   color: white;
   margin-top: 20px;
+  font-size: 2rem;
 }
 
 .hero .hero-img {
@@ -343,6 +344,54 @@ nav .nav_right .signup {
   font-weight: bold;
   border-radius: 5px;
   color: white;
+}
+
+.shorten button:active {
+  background-color: #7cd0d0;
+}
+
+.shortened-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.shortened-links .short-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5px;
+  background-color: #EFF1F7;
+}
+
+.shortened-links .short-link span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shortened-links .short-link span button {
+  padding: 15px;
+  font-size: 1.5rem;
+  color: white;
+  width: 100px;
+  border-radius: 5px;
+  background-color: #2acfcf;
+  margin-left: 30px;
 }
 
 .advanced {
